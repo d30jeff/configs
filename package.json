@@ -1,0 +1,17 @@
+{
+  "name": "@deojeff/configs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [
+    "config",
+    "typescript",
+    "eslint",
+    "prettier"
+  ],
+  "author": {
+    "name": "Deojeff Lai",
+    "url": "https://github.com/d30jeff"
+  },
+  "license": "ISC"
+}
