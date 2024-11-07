@@ -4,7 +4,6 @@ const tseslint = require('typescript-eslint');
 const pluginSecurity = require('eslint-plugin-security');
 
 module.exports = tseslint.config({
-  // Backend configuration
   files: ["**/*.ts", '../*.cjs'],
   ignores: ["dist"],
   languageOptions: {
