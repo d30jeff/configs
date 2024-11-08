@@ -1,6 +1,6 @@
 {
   "name": "@deojeff/configs",
-  "version": "0.0.0-development",
+  "version": "1.0.0",
   "keywords": [
     "config",
     "typescript",
@@ -11,12 +11,11 @@
     "name": "Deojeff Lai",
     "url": "https://github.com/d30jeff"
   },
-  "scripts": {
-    "semantic-release": "semantic-release"
-  },
+  "scripts": {},
   "license": "MIT",
   "packageManager": "pnpm@9.12.3+sha512.cce0f9de9c5a7c95bef944169cc5dfe8741abfb145078c0d508b868056848a87c81e626246cb60967cbd7fd29a6c062ef73ff840d96b3c86c40ac92cf4a813ee",
   "dependencies": {
+    "@changesets/cli": "^2.27.9",
     "@stylistic/eslint-plugin-js": "^2.10.1",
     "@stylistic/eslint-plugin-ts": "^2.10.1",
     "eslint-plugin-import": "^2.31.0",
@@ -29,8 +28,5 @@
   },
   "publishConfig": {
     "access": "public"
-  },
-  "devDependencies": {
-    "semantic-release": "^24.2.0"
   }
 }
