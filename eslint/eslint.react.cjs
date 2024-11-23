@@ -4,8 +4,9 @@ const tseslint = require('typescript-eslint');
 const react = require('eslint-plugin-react');
 const tailwindcss = require('eslint-plugin-tailwindcss');
 const reactRefresh = require('eslint-plugin-react-refresh');
-const a11y = require('eslint-plugin-jsx-a11y')
-const storybook = require('eslint-plugin-storybook')
+const a11y = require('eslint-plugin-jsx-a11y');
+const storybook = require('eslint-plugin-storybook');
+const reactHooks = require('eslint-plugin-react-hooks');
 
 module.exports = tseslint.config({
   files: ["**/*.tsx"],
@@ -25,6 +26,8 @@ module.exports = tseslint.config({
     storybook,
     'react-refresh': reactRefresh,
     'jsx-a11y': a11y,
+    'react-hooks': reactHooks,
+    'react-refresh': reactRefresh,
   },
   rules: {
     ...baseConfig.rules,

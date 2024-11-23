@@ -1,6 +1,6 @@
 {
   "name": "@deojeff/configs",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "prettier": "./prettier/prettier.config.cjs",
   "keywords": [
     "config",
@@ -22,18 +22,21 @@
     "@stylistic/eslint-plugin-js": "^2.10.1",
     "@stylistic/eslint-plugin-ts": "^2.10.1",
     "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-newline-destructuring": "^1.2.2",
     "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-react-refresh": "^0.4.14",
     "eslint-plugin-security": "^3.0.1",
     "eslint-plugin-simple-import-sort": "^12.1.1",
     "eslint-plugin-sort-keys": "^2.3.5",
+    "eslint-plugin-storybook": "^0.11.1",
+    "eslint-plugin-tailwindcss": "^3.17.5",
     "prettier": "^3.3.3",
     "typescript-eslint": "8.14.1-alpha.6"
   },
   "devDependencies": {
-    "eslint": "^9.15.0"
-  },
-  "peerDependencies": {
     "eslint": "^9.15.0"
   },
   "publishConfig": {
