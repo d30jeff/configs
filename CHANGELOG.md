@@ -1,5 +1,11 @@
 # @deojeff/configs
 
+## 1.1.1
+
+### Patch Changes
+
+- 3381f08: Fix typescript-eslint 'allowShortCircuit' error
+
 ## 1.1.0
 
 ### Minor Changes
