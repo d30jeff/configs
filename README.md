@@ -25,6 +25,10 @@ To alleviate the pain of maintaining different eslint, typescript config, and pr
 
 ### Eslint
 
+Install eslint as devDependencies in your project.
+
+`pnpm install -D eslint`
+
 **React**
 
 In `eslint.config.cjs`
