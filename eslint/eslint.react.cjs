@@ -9,7 +9,7 @@ const storybook = require('eslint-plugin-storybook');
 const reactHooks = require('eslint-plugin-react-hooks');
 
 module.exports = tseslint.config({
-  files: ["**/*.tsx"],
+  files: ["**/*.{ts,tsx}"],
   ignores: ["dist"],
   languageOptions: {
     parserOptions: {
