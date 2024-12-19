@@ -1,5 +1,11 @@
 # @deojeff/configs
 
+## 1.1.2
+
+### Patch Changes
+
+- cb39927: Fix eslint react not fixing .ts files
+
 ## 1.1.1
 
 ### Patch Changes
