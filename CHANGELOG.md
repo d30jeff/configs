@@ -1,5 +1,13 @@
 # @deojeff/configs
 
+## 2.0.0
+
+### Major Changes
+
+- a849557: Allow developers to define 'files', and 'ignores' pattern
+
+  Convert files to ESM
+
 ## 1.1.2
 
 ### Patch Changes
