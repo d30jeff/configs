@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "display": "React Typescript Config",
+  "display": "Node Typescript Config",
   "extends": "./base.json",
   "compilerOptions": {
     "module": "NodeNext",

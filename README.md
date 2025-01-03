@@ -31,20 +31,34 @@ Install eslint as devDependencies in your project.
 
 **React**
 
-In `eslint.config.cjs`
+In `eslint.config.mjs`
 
 ```
-const config = require('@deojeff/configs/eslint/eslint.react.cjs')
+import config from '@deojeff/configs/eslint/eslint.react.cjs';
 
-module.exports = config;
+export default [
+  {
+    files: ["./src"],
+    ignores: ["dist"]
+  },
+  ...config
+];
 ```
 
 **NodeJS**
 
-```
-const config = require('@deojeff/configs/eslint/eslint.node.cjs')
+In `eslint.config.mjs`
 
-module.exports = config;
+```
+import config from '@deojeff/configs/eslint/eslint.node.cjs';
+
+export default [
+  {
+    files: ["./src"],
+    ignores: ["dist"]
+  },
+  ...config
+];
 ```
 
 ## Prettier
@@ -54,10 +68,61 @@ In `package.json`
 ```
 {
   ...
-  "prettier": "@deojeff/configs/prettier/prettier.config.cjs",
+  "prettier": "@deojeff/configs/prettier/prettier.config.mjs",
 }
 ```
 
 ## TypeScript
 
-TODO:
+**React**
+
+```
+{
+  "extends": "@deojeff/configs/typescript/react.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "rootDir": ".",
+    "outDir": "./dist",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "allowUnreachableCode": true
+  },
+  "include": ["src", "vite.config.ts"],
+  "exclude": ["node_modules", "./dist"]
+}
+```
+
+**NodeJS**
+
+```
+{
+  "compilerOptions": {
+    "module": "Node16",
+    "moduleResolution": "Node16",
+    "allowJs": true,
+    "lib": ["ESNext"],
+    "declaration": true,
+    "removeComments": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "useDefineForClassFields": false,
+    "allowSyntheticDefaultImports": true,
+    "noUnusedParameters": false,
+    "noUnusedLocals": false,
+    "target": "ESNext",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": ".",
+    "typeRoots": ["./src/types", "node_modules/@types"],
+    "incremental": true,
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}
+```
