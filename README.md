@@ -34,7 +34,7 @@ Install eslint as devDependencies in your project.
 In `eslint.config.mjs`
 
 ```
-import config from '@deojeff/configs/eslint/eslint.react.cjs';
+import config from '@deojeff/configs/eslint/eslint.react.mjs';
 
 export default [
   {
@@ -50,7 +50,7 @@ export default [
 In `eslint.config.mjs`
 
 ```
-import config from '@deojeff/configs/eslint/eslint.node.cjs';
+import config from '@deojeff/configs/eslint/eslint.node.mjs';
 
 export default [
   {
