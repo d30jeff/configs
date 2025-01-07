@@ -1,5 +1,11 @@
 # @deojeff/configs
 
+## 2.0.1
+
+### Patch Changes
+
+- d85fc66: Fix React throwing tslint error
+
 ## 2.0.0
 
 ### Major Changes
