@@ -5,7 +5,7 @@ import tseslint from 'typescript-eslint';
 import baseConfig from './eslint.base.mjs';
 
 export default tseslint.config({
-  extends: [...baseConfig.extends],
+  extends: [baseConfig.extends],
   languageOptions: {
     parserOptions: {
       parser,
