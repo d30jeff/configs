@@ -7,6 +7,11 @@ import baseConfig from './eslint.base.mjs';
 export default tseslint.config({
   extends: [baseConfig.extends],
   languageOptions: {
+    globals: {
+      __dirname: 'readonly',
+      console: 'readonly',
+      process: 'readonly',
+    },
     parserOptions: {
       parser,
     },
