@@ -1,5 +1,11 @@
 # @deojeff/configs
 
+## 2.0.2
+
+### Patch Changes
+
+- e8e1437: Add globals for node
+
 ## 2.0.1
 
 ### Patch Changes
