@@ -1,5 +1,12 @@
 # @deojeff/configs
 
+## 2.0.2
+
+### Patch Changes
+
+- Increase max-len from 80 to 120
+- e8e1437: Add globals for node
+
 ## 2.0.1
 
 ### Patch Changes

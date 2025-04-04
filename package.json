@@ -1,6 +1,6 @@
 {
   "name": "@deojeff/configs",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "prettier": "./prettier/prettier.config.mjs",
   "keywords": [
     "config",
