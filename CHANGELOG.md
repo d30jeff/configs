@@ -1,5 +1,11 @@
 # @deojeff/configs
 
+## 2.1.0
+
+### Minor Changes
+
+- Add rule to break object properties to newline when there are more than 2 keys
+
 ## 2.0.2
 
 ### Patch Changes

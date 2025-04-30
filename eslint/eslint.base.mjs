@@ -1,6 +1,5 @@
 import eslint from '@eslint/js';
-import stylisticJS from '@stylistic/eslint-plugin-js';
-import stylisticTS from '@stylistic/eslint-plugin-ts';
+import stylistic from '@stylistic/eslint-plugin';
 import tsEslintPlugin from '@typescript-eslint/eslint-plugin';
 import importPlugin from 'eslint-plugin-import';
 import newline from 'eslint-plugin-newline-destructuring';
@@ -12,8 +11,7 @@ import tseslint from 'typescript-eslint';
 export default {
   extends: [eslint.configs.recommended, ...tseslint.configs.recommended],
   plugins: {
-    '@stylistic/js': stylisticJS,
-    '@stylistic/ts': stylisticTS,
+    '@stylistic': stylistic,
     '@typescript-eslint': tsEslintPlugin,
     'import': importPlugin,
     'newline-destructuring': newline,
@@ -23,14 +21,14 @@ export default {
   },
   rules: {
     ...importPlugin.configs.typescript.rules,
-    '@stylistic/js/object-property-newline': [
+    '@stylistic//no-explicit-any': 'off',
+    '@stylistic/explicit-module-boundary-types': 'off',
+    '@stylistic/object-property-newline': [
       'error',
       {
         allowAllPropertiesOnSameLine: true,
       },
     ],
-    '@stylistic/ts/explicit-module-boundary-types': 'off',
-    '@stylistic/ts/no-explicit-any': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/no-namespace': 'off',
     '@typescript-eslint/no-unsafe-function-type': 'off',
@@ -42,7 +40,12 @@ export default {
     'import/no-cycle': 'off',
     'import/no-extraneous-dependencies': 'off',
     'import/prefer-default-export': 'off',
-    'key-spacing': [2, { afterColon: true }],
+    'key-spacing': [
+      2,
+      {
+        afterColon: true,
+      },
+    ],
     'max-len': [
       'error',
       {
@@ -56,7 +59,13 @@ export default {
     ],
     'no-empty': 'warn',
     'no-lone-blocks': 'off',
-    'no-multiple-empty-lines': ['error', { max: 1, maxEOF: 0 }],
+    'no-multiple-empty-lines': [
+      'error',
+      {
+        max: 1,
+        maxEOF: 0,
+      },
+    ],
     'no-param-reassign': 'off',
     'no-redeclare': 'off',
     'no-restricted-syntax': 'off',
@@ -68,6 +77,24 @@ export default {
     'no-underscore-dangle': 'off',
     'no-use-before-define': 'off',
     'no-useless-escape': 'warn',
+    'object-curly-newline': [
+      'error',
+      {
+        ExportDeclaration: {
+          minProperties: 3,
+          multiline: true,
+        },
+        ImportDeclaration: {
+          minProperties: 2,
+          multiline: true,
+        },
+        ObjectExpression: 'always',
+        ObjectPattern: {
+          minProperties: 2,
+          multiline: true,
+        },
+      },
+    ],
     'object-curly-spacing': [2, 'always'],
     'prefer-destructuring': 'warn',
     'prettier/prettier': [
@@ -90,7 +117,11 @@ export default {
     'sort-keys': [
       'error',
       'asc',
-      { caseSensitive: true, minKeys: 2, natural: false },
+      {
+        caseSensitive: true,
+        minKeys: 2,
+        natural: false,
+      },
     ],
     'sort-keys/sort-keys-fix': 1,
   },
