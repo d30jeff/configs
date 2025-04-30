@@ -34,7 +34,9 @@ export default tseslint.config({
     'jsx-quotes': ['error', 'prefer-double'],
     'react-refresh/only-export-components': [
       'warn',
-      { allowConstantExport: true },
+      {
+        allowConstantExport: true,
+      },
     ],
     'react/button-has-type': 'off',
     'react/destructuring-assignment': 'off',
@@ -48,7 +50,9 @@ export default tseslint.config({
     ],
     'react/jsx-filename-extension': [
       2,
-      { extensions: ['.js', '.jsx', '.tsx', '.ts'] },
+      {
+        extensions: ['.js', '.jsx', '.tsx', '.ts'],
+      },
     ],
     'react/jsx-first-prop-new-line': ['error'],
     'react/jsx-fragments': 'off',

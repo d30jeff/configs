@@ -88,7 +88,10 @@ export default {
           minProperties: 2,
           multiline: true,
         },
-        ObjectExpression: 'always',
+        ObjectExpression: {
+          minProperties: 2,
+          multiline: true,
+        },
         ObjectPattern: {
           minProperties: 2,
           multiline: true,
