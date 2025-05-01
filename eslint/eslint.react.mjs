@@ -11,11 +11,7 @@ import baseConfig from './eslint.base.mjs';
 
 export default tseslint.config({
   extends: [baseConfig.extends],
-  languageOptions: {
-    parserOptions: {
-      parser,
-    },
-  },
+  languageOptions: { parserOptions: { parser } },
   plugins: {
     ...baseConfig.plugins,
     'jsx-a11y': a11y,
@@ -32,12 +28,7 @@ export default tseslint.config({
     'jsx-a11y/media-has-caption': 'off',
     'jsx-a11y/no-autofocus': 'off',
     'jsx-quotes': ['error', 'prefer-double'],
-    'react-refresh/only-export-components': [
-      'warn',
-      {
-        allowConstantExport: true,
-      },
-    ],
+    'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
     'react/button-has-type': 'off',
     'react/destructuring-assignment': 'off',
     'react/display-name': 'off',
@@ -48,12 +39,7 @@ export default tseslint.config({
         selfClosing: 'line-aligned',
       },
     ],
-    'react/jsx-filename-extension': [
-      2,
-      {
-        extensions: ['.js', '.jsx', '.tsx', '.ts'],
-      },
-    ],
+    'react/jsx-filename-extension': [2, { extensions: ['.js', '.jsx', '.tsx', '.ts'] }],
     'react/jsx-first-prop-new-line': ['error'],
     'react/jsx-fragments': 'off',
     'react/jsx-indent': ['error', 2],

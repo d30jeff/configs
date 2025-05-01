@@ -12,15 +12,11 @@ export default tseslint.config({
       console: 'readonly',
       process: 'readonly',
     },
-    parserOptions: {
-      parser,
-    },
+    parserOptions: { parser },
   },
   plugins: {
     ...baseConfig.plugins,
     'eslint-plugin-security': pluginSecurity.configs.recommended,
   },
-  rules: {
-    ...baseConfig.rules,
-  },
+  rules: { ...baseConfig.rules },
 });

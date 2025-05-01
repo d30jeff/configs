@@ -23,12 +23,7 @@ export default {
     ...importPlugin.configs.typescript.rules,
     '@stylistic//no-explicit-any': 'off',
     '@stylistic/explicit-module-boundary-types': 'off',
-    '@stylistic/object-property-newline': [
-      'error',
-      {
-        allowAllPropertiesOnSameLine: true,
-      },
-    ],
+    '@stylistic/object-property-newline': ['error', { allowAllPropertiesOnSameLine: true }],
     '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/no-namespace': 'off',
     '@typescript-eslint/no-unsafe-function-type': 'off',
@@ -40,12 +35,7 @@ export default {
     'import/no-cycle': 'off',
     'import/no-extraneous-dependencies': 'off',
     'import/prefer-default-export': 'off',
-    'key-spacing': [
-      2,
-      {
-        afterColon: true,
-      },
-    ],
+    'key-spacing': [2, { afterColon: true }],
     'max-len': [
       'error',
       {
@@ -100,12 +90,7 @@ export default {
     ],
     'object-curly-spacing': [2, 'always'],
     'prefer-destructuring': 'warn',
-    'prettier/prettier': [
-      'warn',
-      {
-        usePrettierrc: false,
-      },
-    ],
+    'prettier/prettier': ['warn', { usePrettierrc: false }],
     'quotes': [
       'error',
       'single',
