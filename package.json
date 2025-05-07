@@ -1,7 +1,6 @@
 {
   "name": "@deojeff/configs",
-  "version": "2.1.0",
-  "prettier": "./prettier/prettier.config.mjs",
+  "version": "2.2.0",
   "keywords": [
     "config",
     "typescript",
@@ -21,6 +20,7 @@
     "@changesets/cli": "^2.27.9",
     "@stylistic/eslint-plugin": "^4.2.0",
     "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-import-newlines": "^1.4.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-newline-destructuring": "^1.2.2",
     "eslint-plugin-prettier": "^5.2.1",
@@ -36,9 +36,12 @@
     "typescript-eslint": "8.17.0"
   },
   "devDependencies": {
-    "eslint": "^9.15.0"
+    "eslint": "^9.26.0"
   },
   "publishConfig": {
     "access": "public"
+  },
+  "peerDependencies": {
+    "eslint": "^9.26.0"
   }
 }

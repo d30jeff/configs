@@ -2,8 +2,8 @@ import eslint from '@eslint/js';
 import stylistic from '@stylistic/eslint-plugin';
 import tsEslintPlugin from '@typescript-eslint/eslint-plugin';
 import importPlugin from 'eslint-plugin-import';
+import importNewline from 'eslint-plugin-import-newlines';
 import newline from 'eslint-plugin-newline-destructuring';
-import eslintPluginPrettier from 'eslint-plugin-prettier';
 import simpleImportSort from 'eslint-plugin-simple-import-sort';
 import sortKeys from 'eslint-plugin-sort-keys';
 import tseslint from 'typescript-eslint';
@@ -14,8 +14,8 @@ export default {
     '@stylistic': stylistic,
     '@typescript-eslint': tsEslintPlugin,
     'import': importPlugin,
+    'import-newlines': importNewline,
     'newline-destructuring': newline,
-    'prettier': eslintPluginPrettier,
     'simple-import-sort': simpleImportSort,
     'sort-keys': sortKeys,
   },
@@ -28,14 +28,32 @@ export default {
     '@typescript-eslint/no-namespace': 'off',
     '@typescript-eslint/no-unsafe-function-type': 'off',
     '@typescript-eslint/no-unused-vars': 'warn',
+    'array-bracket-spacing': ['error', 'never'],
     'arrow-body-style': 'off',
-    'comma-dangle': 'off',
+    'arrow-parens': ['error', 'always'],
+    'arrow-spacing': ['error', {
+      after: true,
+      before: true,
+    }],
+    'comma-dangle': ['error', 'always-multiline'],
+    'comma-spacing': ['error', {
+      after: true,
+      before: false,
+    }],
     'global-require': 'off',
+    'import-newlines/enforce': ['error', { items: 2 }],
     'import/extensions': 'off',
     'import/no-cycle': 'off',
     'import/no-extraneous-dependencies': 'off',
     'import/prefer-default-export': 'off',
     'key-spacing': [2, { afterColon: true }],
+    'keyword-spacing': [
+      'error',
+      {
+        after: true,
+        before: true,
+      },
+    ],
     'max-len': [
       'error',
       {
@@ -47,6 +65,8 @@ export default {
         ignoreUrls: true,
       },
     ],
+    'newline-destructuring/newline': ['error', { items: 2 }],
+    'newline-per-chained-call': ['error', { ignoreChainWithDepth: 2 }],
     'no-empty': 'warn',
     'no-lone-blocks': 'off',
     'no-multiple-empty-lines': [
@@ -71,10 +91,6 @@ export default {
       'error',
       {
         ExportDeclaration: {
-          minProperties: 3,
-          multiline: true,
-        },
-        ImportDeclaration: {
           minProperties: 2,
           multiline: true,
         },
@@ -89,8 +105,9 @@ export default {
       },
     ],
     'object-curly-spacing': [2, 'always'],
+    'object-property-newline': 'error',
     'prefer-destructuring': 'warn',
-    'prettier/prettier': ['warn', { usePrettierrc: false }],
+    // 'prettier/prettier': ['warn', { usePrettierrc: false }],
     'quotes': [
       'error',
       'single',
@@ -112,5 +129,6 @@ export default {
       },
     ],
     'sort-keys/sort-keys-fix': 1,
+    'space-before-blocks': ['error', 'always'],
   },
 };
