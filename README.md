@@ -1,6 +1,7 @@
 # Configs
 
-This is my personal configuration files for eslint, prettier, and typescript that works for me.
+This is a bundle configuration files for eslint, prettier, and typescript based on my subjective preference.
+
 Feel free to fork and modify as needed for your use case.
 
 ### Motivation
@@ -11,23 +12,17 @@ To alleviate the pain of maintaining different eslint, typescript config, and pr
 
 **npm**
 
-`npm i -D @deojeff/configs`
+`npm i -D @deojeff/configs eslint`
 
 **yarn**
 
-`yarn add -D @deojeff/configs`
+`yarn add -D @deojeff/configs eslint`
 
 **pnpm**
 
-`pnpm add -D @deojeff/configs`
+`pnpm add -D @deojeff/configs eslint`
 
 # Usage
-
-### Eslint
-
-Install eslint as devDependencies in your project.
-
-`pnpm install -D eslint`
 
 **React**
 
@@ -61,17 +56,6 @@ export default [
 ];
 ```
 
-## Prettier
-
-In `package.json`
-
-```
-{
-  ...
-  "prettier": "@deojeff/configs/prettier/prettier.config.mjs",
-}
-```
-
 ## TypeScript
 
 **React**
@@ -95,34 +79,84 @@ In `package.json`
 
 **NodeJS**
 
+
+# Rule Details
+
+Work in progress, please refer to the eslint file for more information.
+
+## Basics
+## Arrays
+## Objects
+## Functions
+## Classes
+
+## Basics
+
+## Arrays
+
+### Spacing
+`'array-bracket-spacing': ['error', 'never']`
+
+❌ There should be no space after `[` and before `]`
+
+`export const arrays = [ 1, 2, 3, 4, 5 ];`
+
+✅ No spaces
+
+`export const arrays = [1, 2, 3, 4, 5];`
+
+### Class Properties
+
+❌ Unexpected blank line between class members
+
 ```
-{
-  "compilerOptions": {
-    "module": "Node16",
-    "moduleResolution": "Node16",
-    "allowJs": true,
-    "lib": ["ESNext"],
-    "declaration": true,
-    "removeComments": true,
-    "experimentalDecorators": true,
-    "emitDecoratorMetadata": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "useDefineForClassFields": false,
-    "allowSyntheticDefaultImports": true,
-    "noUnusedParameters": false,
-    "noUnusedLocals": false,
-    "target": "ESNext",
-    "sourceMap": true,
-    "outDir": "./dist",
-    "baseUrl": ".",
-    "typeRoots": ["./src/types", "node_modules/@types"],
-    "incremental": true,
-    "paths": {
-      "@/*": ["src/*"]
-    }
-  },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules"]
+export class Person {
+  name: string;
+
+  age: string;
+}
+```
+
+✅ No additional lines between properties
+
+```
+class Person {
+  name: string;
+  age: string;
+}
+```
+
+
+### Class Methods
+
+❌ Expected blank line between class members
+```ts
+export class Person {
+  name: string;
+  age: string;
+
+  getName() {
+    return this.name;
+  }
+  getAge() {
+    return this.age;
+  }
+}
+```
+
+✅ Require additional lines between methods
+
+```ts
+export class Person {
+  name: string;
+  age: string;
+
+  getName() {
+    return this.name;
+  }
+
+  getAge() {
+    return this.age;
+  }
 }
 ```

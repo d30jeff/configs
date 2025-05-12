@@ -59,7 +59,20 @@ export default {
         before: true,
       },
     ],
-    'lines-between-class-members': ['error', 'always'],
+    'lines-between-class-members': ['error', {
+      enforce: [
+        {
+          blankLine: 'always',
+          next: 'method',
+          prev: 'method',
+        },
+        {
+          blankLine: 'never',
+          next: 'field',
+          prev: 'field',
+        },
+      ],
+    }],
     'max-len': [
       'error',
       {

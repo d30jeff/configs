@@ -1,5 +1,11 @@
 # @deojeff/configs
 
+## 2.4.0
+
+### Minor Changes
+
+- Add rules for class properties and methods
+
 ## 2.3.0
 
 ### Minor Changes
