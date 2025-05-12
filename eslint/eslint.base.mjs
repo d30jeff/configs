@@ -11,6 +11,7 @@ import tseslint from 'typescript-eslint';
 export default {
   extends: [eslint.configs.recommended, ...tseslint.configs.recommended],
   plugins: {
+
     '@stylistic': stylistic,
     '@typescript-eslint': tsEslintPlugin,
     'import': importPlugin,
@@ -21,9 +22,10 @@ export default {
   },
   rules: {
     ...importPlugin.configs.typescript.rules,
-    '@stylistic//no-explicit-any': 'off',
     '@stylistic/explicit-module-boundary-types': 'off',
+    '@stylistic/no-explicit-any': 'off',
     '@stylistic/object-property-newline': ['error', { allowAllPropertiesOnSameLine: true }],
+    '@stylistic/semi': ['error', 'always'],
     '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/no-namespace': 'off',
     '@typescript-eslint/no-unsafe-function-type': 'off',
@@ -35,11 +37,14 @@ export default {
       after: true,
       before: true,
     }],
+    'brace-style': ['error', '1tbs', { allowSingleLine: false }],
     'comma-dangle': ['error', 'always-multiline'],
     'comma-spacing': ['error', {
       after: true,
       before: false,
     }],
+    'function-call-argument-newline': ['error', 'consistent'],
+    'function-paren-newline': ['error', 'consistent'],
     'global-require': 'off',
     'import-newlines/enforce': ['error', { items: 2 }],
     'import/extensions': 'off',
@@ -54,6 +59,7 @@ export default {
         before: true,
       },
     ],
+    'lines-between-class-members': ['error', 'always'],
     'max-len': [
       'error',
       {
@@ -65,6 +71,7 @@ export default {
         ignoreUrls: true,
       },
     ],
+    'new-parens': ['error', 'always'],
     'newline-destructuring/newline': ['error', { items: 2 }],
     'newline-per-chained-call': ['error', { ignoreChainWithDepth: 2 }],
     'no-empty': 'warn',
@@ -116,7 +123,7 @@ export default {
         avoidEscape: false,
       },
     ],
-    'semi': 'error',
+    'semi': ['error', 'always'],
     'simple-import-sort/exports': 'error',
     'simple-import-sort/imports': 'error',
     'sort-keys': [
@@ -130,5 +137,6 @@ export default {
     ],
     'sort-keys/sort-keys-fix': 1,
     'space-before-blocks': ['error', 'always'],
+    'template-curly-spacing': ['error', 'never'],
   },
 };

@@ -4,19 +4,21 @@ import tseslint from 'typescript-eslint';
 
 import baseConfig from './eslint.base.mjs';
 
-export default tseslint.config({
-  extends: [baseConfig.extends],
-  languageOptions: {
-    globals: {
-      __dirname: 'readonly',
-      console: 'readonly',
-      process: 'readonly',
+export default tseslint.config(
+  {
+    extends: [baseConfig.extends],
+    languageOptions: {
+      globals: {
+        __dirname: 'readonly',
+        console: 'readonly',
+        process: 'readonly',
+      },
+      parserOptions: { parser },
     },
-    parserOptions: { parser },
+    plugins: {
+      ...baseConfig.plugins,
+      'eslint-plugin-security': pluginSecurity.configs.recommended,
+    },
+    rules: { ...baseConfig.rules },
   },
-  plugins: {
-    ...baseConfig.plugins,
-    'eslint-plugin-security': pluginSecurity.configs.recommended,
-  },
-  rules: { ...baseConfig.rules },
-});
+);
