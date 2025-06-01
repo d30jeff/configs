@@ -44,7 +44,7 @@ export default {
       before: false,
     }],
     'function-call-argument-newline': ['error', 'consistent'],
-    'function-paren-newline': ['error', 'consistent'],
+    'function-paren-newline': ['error', 'multiline-arguments'],
     'global-require': 'off',
     'import-newlines/enforce': ['error', { items: 2 }],
     'import/extensions': 'off',
@@ -67,7 +67,7 @@ export default {
           prev: 'method',
         },
         {
-          blankLine: 'never',
+          blankLine: 'always',
           next: 'field',
           prev: 'field',
         },
@@ -125,7 +125,7 @@ export default {
       },
     ],
     'object-curly-spacing': [2, 'always'],
-    'object-property-newline': 'error',
+    'object-property-newline': ['error', { 'allowAllPropertiesOnSameLine': false }],
     'prefer-destructuring': 'warn',
     // 'prettier/prettier': ['warn', { usePrettierrc: false }],
     'quotes': [

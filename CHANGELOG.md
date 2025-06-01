@@ -1,5 +1,11 @@
 # @deojeff/configs
 
+## 2.5.0
+
+### Minor Changes
+
+- Requires blank line for each property in a class
+
 ## 2.4.0
 
 ### Minor Changes
