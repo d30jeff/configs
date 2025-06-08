@@ -1,5 +1,11 @@
 # @deojeff/configs
 
+## 2.5.1
+
+### Patch Changes
+
+- Add various React rules
+
 ## 2.5.0
 
 ### Minor Changes

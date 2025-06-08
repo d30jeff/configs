@@ -11,7 +11,6 @@ import tseslint from 'typescript-eslint';
 export default {
   extends: [eslint.configs.recommended, ...tseslint.configs.recommended],
   plugins: {
-
     '@stylistic': stylistic,
     '@typescript-eslint': tsEslintPlugin,
     'import': importPlugin,

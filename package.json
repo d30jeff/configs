@@ -1,6 +1,6 @@
 {
   "name": "@deojeff/configs",
-  "version": "2.5.0",
+  "version": "2.5.1",
   "keywords": [
     "config",
     "typescript",
@@ -33,15 +33,15 @@
     "eslint-plugin-storybook": "^0.11.1",
     "eslint-plugin-tailwindcss": "^3.17.5",
     "prettier": "^3.3.3",
-    "typescript-eslint": "8.17.0"
+    "typescript-eslint": "8.33.1"
   },
   "devDependencies": {
-    "eslint": "^9.26.0"
+    "eslint": "^9.28.0"
   },
   "publishConfig": {
     "access": "public"
   },
   "peerDependencies": {
-    "eslint": "^9.26.0"
+    "eslint": "^9.28.0"
   }
 }
