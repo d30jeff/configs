@@ -1,5 +1,11 @@
 # @deojeff/configs
 
+## 2.5.4
+
+### Patch Changes
+
+- Update react eslint
+
 ## 2.5.3
 
 ### Patch Changes

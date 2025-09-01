@@ -80,7 +80,11 @@ export default tseslint.config(
       'react/react-in-jsx-scope': 'off',
       'react/require-default-props': 'off',
       'react/sort-prop-types': [2, {}],
+      'tailwindcss/classnames-order': 'error',
+      'tailwindcss/enforces-negative-arbitrary-values': 'error',
+      'tailwindcss/enforces-shorthand': 'error',
       'tailwindcss/no-custom-classname': 'off',
     },
+    settings: { react: { version: 'detect' } },
   },
 );
