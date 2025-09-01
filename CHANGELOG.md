@@ -1,5 +1,17 @@
 # @deojeff/configs
 
+## 2.5.3
+
+### Patch Changes
+
+- Update tailwindcss version
+
+## 2.5.2
+
+### Patch Changes
+
+- Add missing @eslint/js package
+
 ## 2.5.1
 
 ### Patch Changes
