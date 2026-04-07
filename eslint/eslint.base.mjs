@@ -50,6 +50,7 @@ export default {
     'import/no-cycle': 'off',
     'import/no-extraneous-dependencies': 'off',
     'import/prefer-default-export': 'off',
+    'indent': ['error', 2],
     'key-spacing': [2, { afterColon: true }],
     'keyword-spacing': [
       'error',
@@ -84,7 +85,7 @@ export default {
       },
     ],
     'new-parens': ['error', 'always'],
-    'newline-destructuring/newline': ['error', { items: 2 }],
+    // 'newline-destructuring/newline': ['error', { items: 2 }],
     'newline-per-chained-call': ['error', { ignoreChainWithDepth: 2 }],
     'no-empty': 'warn',
     'no-lone-blocks': 'off',
@@ -114,10 +115,12 @@ export default {
           multiline: true,
         },
         ObjectExpression: {
+          consistent: true,
           minProperties: 2,
           multiline: true,
         },
         ObjectPattern: {
+          consistent: true,
           minProperties: 2,
           multiline: true,
         },
