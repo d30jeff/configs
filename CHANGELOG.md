@@ -1,5 +1,11 @@
 # @deojeff/configs
 
+## 2.5.5
+
+### Patch Changes
+
+- Fix object-curly-newline not respecting indentation
+
 ## 2.5.4
 
 ### Patch Changes
