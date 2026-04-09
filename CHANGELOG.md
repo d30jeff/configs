@@ -1,5 +1,11 @@
 # @deojeff/configs
 
+## 2.5.6
+
+### Patch Changes
+
+- Add consistent new line for array elements
+
 ## 2.5.5
 
 ### Patch Changes

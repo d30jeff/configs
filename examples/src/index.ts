@@ -9,7 +9,28 @@ const {
 } = persons;
 
 class Testing {
-
+  items = ['Awesome',
+    'Street',
+    'Awesome',
+    'Street',
+    'Awesome',
+    'Street',
+    'Awesome',
+    'Street',
+    'Awesome',
+    'Street',
+    'Awesome',
+    'Street',
+    'Awesome',
+    'Street',
+    'Awesome',
+    'Street',
+    'Awesome',
+    'Street',
+    'Awesome',
+    'Street',
+    'Awesome',
+    'Street'];
   constructor() {}
 
   doSomething() {

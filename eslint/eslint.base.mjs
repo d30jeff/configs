@@ -30,6 +30,7 @@ export default {
     '@typescript-eslint/no-unsafe-function-type': 'off',
     '@typescript-eslint/no-unused-vars': 'warn',
     'array-bracket-spacing': ['error', 'never'],
+    'array-element-newline': ['error', 'consistent'],
     'arrow-body-style': 'off',
     'arrow-parens': ['error', 'always'],
     'arrow-spacing': ['error', {
