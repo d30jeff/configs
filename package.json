@@ -46,10 +46,5 @@
   },
   "peerDependencies": {
     "eslint": "^9.28.0"
-  },
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "esbuild"
-    ]
   }
 }
