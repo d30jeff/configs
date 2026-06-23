@@ -4,8 +4,7 @@ const persons = {
   name: 'John Smith',
 };
 
-const secrets = [
-  1,
+const secrets = [1,
   2,
   3,
   4,
