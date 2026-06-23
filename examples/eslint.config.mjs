@@ -1,4 +1,4 @@
-import config from '@deojeff/configs/eslint/eslint.node.mjs';
+import config from '@d30jeff/configs/eslint/eslint.node.mjs';
 
 export default [
   {

@@ -1,4 +1,4 @@
-# @deojeff/configs
+# @d30jeff/configs
 
 ## 2.5.7
 

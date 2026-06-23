@@ -12,15 +12,15 @@ To alleviate the pain of maintaining different eslint, typescript config, and pr
 
 **npm**
 
-`npm i -D @deojeff/configs eslint`
+`npm i -D @d30jeff/configs eslint`
 
 **yarn**
 
-`yarn add -D @deojeff/configs eslint`
+`yarn add -D @d30jeff/configs eslint`
 
 **pnpm**
 
-`pnpm add -D @deojeff/configs eslint`
+`pnpm add -D @d30jeff/configs eslint`
 
 # Usage
 
@@ -29,7 +29,7 @@ To alleviate the pain of maintaining different eslint, typescript config, and pr
 In `eslint.config.mjs`
 
 ```
-import config from '@deojeff/configs/eslint/eslint.react.mjs';
+import config from '@d30jeff/configs/eslint/eslint.react.mjs';
 
 export default [
   {
@@ -45,7 +45,7 @@ export default [
 In `eslint.config.mjs`
 
 ```
-import config from '@deojeff/configs/eslint/eslint.node.mjs';
+import config from '@d30jeff/configs/eslint/eslint.node.mjs';
 
 export default [
   {
@@ -62,7 +62,7 @@ export default [
 
 ```
 {
-  "extends": "@deojeff/configs/typescript/react.json",
+  "extends": "@d30jeff/configs/typescript/react.json",
   "compilerOptions": {
     "baseUrl": ".",
     "rootDir": ".",
