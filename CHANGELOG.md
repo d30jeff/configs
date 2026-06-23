@@ -1,5 +1,11 @@
 # @deojeff/configs
 
+## 2.5.7
+
+### Patch Changes
+
+- Fix syntax error for array newline
+
 ## 2.5.6
 
 ### Patch Changes
