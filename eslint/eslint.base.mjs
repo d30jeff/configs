@@ -30,19 +30,31 @@ export default {
     '@typescript-eslint/no-unsafe-function-type': 'off',
     '@typescript-eslint/no-unused-vars': 'warn',
     'array-bracket-spacing': ['error', 'never'],
-    'array-element-newline': ['error', 'consistent'],
+    'array-element-newline': ['error',
+      {
+        "ArrayExpression": "consistent",
+        "ArrayPattern": {
+          minItems: 3,
+        },
+      }],
     'arrow-body-style': 'off',
     'arrow-parens': ['error', 'always'],
-    'arrow-spacing': ['error', {
-      after: true,
-      before: true,
-    }],
-    'brace-style': ['error', '1tbs', { allowSingleLine: false }],
+    'arrow-spacing': ['error',
+      {
+        after: true,
+        before: true,
+      }],
+    'brace-style': [
+      'error',
+      '1tbs',
+      { allowSingleLine: false },
+    ],
     'comma-dangle': ['error', 'always-multiline'],
-    'comma-spacing': ['error', {
-      after: true,
-      before: false,
-    }],
+    'comma-spacing': ['error',
+      {
+        after: true,
+        before: false,
+      }],
     'function-call-argument-newline': ['error', 'consistent'],
     'function-paren-newline': ['error', 'multiline-arguments'],
     'global-require': 'off',
@@ -60,20 +72,21 @@ export default {
         before: true,
       },
     ],
-    'lines-between-class-members': ['error', {
-      enforce: [
-        {
-          blankLine: 'always',
-          next: 'method',
-          prev: 'method',
-        },
-        {
-          blankLine: 'always',
-          next: 'field',
-          prev: 'field',
-        },
-      ],
-    }],
+    'lines-between-class-members': ['error',
+      {
+        enforce: [
+          {
+            blankLine: 'always',
+            next: 'method',
+            prev: 'method',
+          },
+          {
+            blankLine: 'always',
+            next: 'field',
+            prev: 'field',
+          },
+        ],
+      }],
     'max-len': [
       'error',
       {
@@ -130,7 +143,6 @@ export default {
     'object-curly-spacing': [2, 'always'],
     'object-property-newline': ['error', { 'allowAllPropertiesOnSameLine': false }],
     'prefer-destructuring': 'warn',
-    // 'prettier/prettier': ['warn', { usePrettierrc: false }],
     'quotes': [
       'error',
       'single',
@@ -139,6 +151,7 @@ export default {
         avoidEscape: false,
       },
     ],
+    'require-await': 'error',
     'semi': ['error', 'always'],
     'simple-import-sort/exports': 'error',
     'simple-import-sort/imports': 'error',

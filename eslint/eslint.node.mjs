@@ -1,4 +1,5 @@
 import parser from '@typescript-eslint/parser';
+import ngModuleSort from 'eslint-plugin-ng-module-sort';
 import pluginSecurity from 'eslint-plugin-security';
 import tseslint from 'typescript-eslint';
 
@@ -18,7 +19,11 @@ export default tseslint.config(
     plugins: {
       ...baseConfig.plugins,
       'eslint-plugin-security': pluginSecurity.configs.recommended,
+      'ng-module-sort': ngModuleSort,
     },
-    rules: { ...baseConfig.rules },
+    rules: {
+      ...baseConfig.rules,
+      'ng-module-sort/decorator-array-items': 'error',
+    },
   },
 );

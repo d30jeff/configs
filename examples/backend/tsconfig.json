@@ -21,18 +21,6 @@
     "forceConsistentCasingInFileNames": true,
     "noImplicitAny": false,
     "strictBindCallApply": false,
-    "noFallthroughCasesInSwitch": false,
-    "typeRoots": [
-      "libs/types",
-      "node_modules/@types"
-    ],
-    "paths": {
-      "@apps/*": [
-        "apps/*"
-      ],
-      "@libs/*": [
-        "libs/*"
-      ],
-    }
+    "noFallthroughCasesInSwitch": false
   }
 }
